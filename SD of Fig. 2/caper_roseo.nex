@@ -1,0 +1,21 @@
+#NEXUS
+[R-package APE, Tue Jan  2 22:11:15 2024]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX = 4;
+	TAXLABELS
+		Dinoroseobacter_shibae_DFL_12
+		Sulfitobacter_sp_EE-36
+		Ruegeria_pomeroyi_DSS_3
+		CHUG_sp_HKCCA1288
+	;
+END;
+BEGIN TREES;
+	TRANSLATE
+		1	Dinoroseobacter_shibae_DFL_12,
+		2	Sulfitobacter_sp_EE-36,
+		3	Ruegeria_pomeroyi_DSS_3,
+		4	CHUG_sp_HKCCA1288
+	;
+	TREE * UNTITLED = [&R] (1:0.0745403,((2:0.0831210464,3:0.065024149):0.0319147931,4:0.1068966067):0.0745403);
+END;

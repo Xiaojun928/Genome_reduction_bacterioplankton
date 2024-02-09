@@ -1,0 +1,193 @@
+DATASET_COLORSTRIP
+#In colored strip datasets, each ID is associated to a color box/strip and can have an optional label. Color can be specified in hexadecimal, RGB or RGBA notation. When using RGB or RGBA notation, you cannot use COMMA as the dataset separator
+
+#lines starting with a hash are comments and ignored during parsing
+
+#=================================================================#
+#                    MANDATORY SETTINGS                           #
+#=================================================================#
+#select the separator which is used to delimit the data below (TAB,SPACE or COMMA).This separator must be used throughout this file (except in the SEPARATOR line, which uses space).
+
+SEPARATOR TAB
+
+#label is used in the legend table (can be changed later)
+DATASET_LABEL	Main_cluster
+
+#dataset color (can be changed later)
+COLOR	#ff0000
+
+#=================================================================#
+#                    OPTIONAL SETTINGS                            #
+#=================================================================#
+
+#If COLOR_BRANCHES is set to 1, branches of the tree will be colored according to the colors of the strips above the leaves.
+#When all children of a node have the same color, it will be colored the same, ie. the color will propagate inwards towards the root.
+#COLOR_BRANCHES 0
+
+
+#=================================================================#
+#     all other optional settings can be set or changed later     #
+#           in the web interface (under 'Datasets' tab)           #
+#=================================================================#
+
+#Each dataset can have a legend, which is defined using LEGEND_XXX fields below
+#For each row in the legend, there should be one shape, color and label.
+#Optionally, you can define an exact legend position using LEGEND_POSITION_X and LEGEND_POSITION_Y. To use automatic legend positioning, do NOT define these values
+#Optionally, shape scaling can be present (LEGEND_SHAPE_SCALES). For each shape, you can define a scaling factor between 0 and 1.
+#Shape should be a number between 1 and 6, or any protein domain shape definition.
+#1: square
+#2: circle
+#3: star
+#4: right pointing triangle
+#5: left pointing triangle
+#6: checkmark
+
+LEGEND_TITLE	Main_cluster
+LEGEND_POSITION_X	100
+LEGEND_POSITION_Y	100
+
+LEGEND_SHAPES	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+LEGEND_COLORS	#FF0000	#FFA500	#FFFF00	#008000	#0000FF	#800080	#FFC0CB	#A52A2A	#808080	#000000	#F5F5DC	#008080	#000080	#FF00FF	#00FFFF	#808000	#800000	#40E0D0	#E6E6FA
+LEGEND_LABELS	MC0	MC12	MC13	MC14	MC16	MC19	MC2	MC20	MC22	MC26	MC3	MC30	MC31	MC33	MC4	MC5	MC6	MC7	MC8
+LEGEND_SHAPE_SCALES	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+
+
+#width of the colored strip
+#STRIP_WIDTH 20
+
+#left margin, used to increase/decrease the spacing to the next dataset. Can be negative, causing datasets to overlap.
+#MARGIN 20
+
+#border width; if set above 0, a border of specified width (in pixels) will be drawn around the color strip 
+#BORDER_WIDTH 0
+
+#border color; used when BORDER_WIDTH is above 0
+#BORDER_COLOR #0000ff
+
+#always show internal values; if set, values associated to internal nodes will be displayed even if these nodes are not collapsed. It could cause overlapping in the dataset display.
+#SHOW_INTERNAL 0
+
+
+#Internal tree nodes can be specified using IDs directly, or using the 'last common ancestor' method described in iTOL help pages
+
+#=================================================================#
+#       Actual data follows after the "DATA" keyword              #
+#=================================================================#
+DATA
+GNM013034545	#FF0000	MC0
+GNM013110755	#FF0000	MC0
+GNM017872615	#FF0000	MC0
+GNM013110715	#FF0000	MC0
+GNM013110775	#FF0000	MC0
+GNM017872495	#FF0000	MC0
+GNM013034605	#FF0000	MC0
+GNM013110805	#FF0000	MC0
+GNM013111185	#FF0000	MC0
+GNM013110825	#FF0000	MC0
+GNM013034475	#FF0000	MC0
+GNM013034945	#FFA500	MC12
+GNM013032665	#FFA500	MC12
+GNM013034915	#FFA500	MC12
+GNM013033385	#FFA500	MC12
+GNM013034725	#FFA500	MC12
+GNM013033345	#FFA500	MC12
+GNM013034845	#FFA500	MC12
+GNM013034905	#FFA500	MC12
+GNM013031265	#FFA500	MC12
+GNM013032635	#FFA500	MC12
+GNM013030185	#FFA500	MC12
+GNM013035005	#FFA500	MC12
+GNM013034755	#FFA500	MC12
+GNM013032725	#FFA500	MC12
+GNM013033555	#FFFF00	MC13
+GNM013033545	#FFFF00	MC13
+GNM013031745	#FFFF00	MC13
+GNM013033045	#FFFF00	MC13
+GNM013035465	#FFFF00	MC13
+GNM003318155	#0000FF	MC16
+GNM018678055	#0000FF	MC16
+GNM018619345	#0000FF	MC16
+GNM013110675	#800080	MC19
+GNM013034175	#800080	MC19
+GNM013033235	#800080	MC19
+GNM013110635	#800080	MC19
+GNM013033705	#800080	MC19
+GNM013110645	#800080	MC19
+GNM013110595	#800080	MC19
+GNM013110705	#800080	MC19
+GNM013032085	#FFC0CB	MC2
+GNM013031465	#FFC0CB	MC2
+GNM013032775	#FFC0CB	MC2
+GNM013030965	#FFC0CB	MC2
+GNM013035915	#FFC0CB	MC2
+GNM019904295	#FFC0CB	MC2
+GNM013031735	#FFC0CB	MC2
+GNM013031825	#FFC0CB	MC2
+GNM013032745	#FFC0CB	MC2
+GNM013031645	#FFC0CB	MC2
+GNM013031835	#FFC0CB	MC2
+GNM013036025	#FFC0CB	MC2
+GNM013031795	#FFC0CB	MC2
+GNM013035685	#FFC0CB	MC2
+GNM013035525	#FFC0CB	MC2
+GNM013031785	#FFC0CB	MC2
+GNM013031435	#FFC0CB	MC2
+GNM013035965	#FFC0CB	MC2
+GNM013035955	#FFC0CB	MC2
+GNM013035365	#FFC0CB	MC2
+GNM013031885	#FFC0CB	MC2
+GNM013033105	#FFC0CB	MC2
+GNM013033065	#FFC0CB	MC2
+GNM013031105	#FFC0CB	MC2
+GNM013031145	#FFC0CB	MC2
+GNM013035845	#FFC0CB	MC2
+GNM013033075	#FFC0CB	MC2
+GNM013032905	#FFC0CB	MC2
+GNM013031525	#FFC0CB	MC2
+GNM013031545	#F5F5DC	MC3
+GNM013035745	#F5F5DC	MC3
+GNM013035705	#F5F5DC	MC3
+GNM013031595	#F5F5DC	MC3
+GNM013032965	#F5F5DC	MC3
+GNM013031485	#F5F5DC	MC3
+GNM013035605	#F5F5DC	MC3
+GNM013031625	#F5F5DC	MC3
+GNM013035715	#F5F5DC	MC3
+GNM013031585	#F5F5DC	MC3
+GNM013035855	#F5F5DC	MC3
+GNM013031375	#F5F5DC	MC3
+GNM013034125	#F5F5DC	MC3
+GNM013032535	#F5F5DC	MC3
+GNM013034185	#F5F5DC	MC3
+GNM013034395	#F5F5DC	MC3
+GNM013032205	#F5F5DC	MC3
+GNM013034045	#F5F5DC	MC3
+GNM013034105	#F5F5DC	MC3
+GNM013032305	#F5F5DC	MC3
+GNM013033805	#F5F5DC	MC3
+GNM013033815	#F5F5DC	MC3
+GNM013033605	#F5F5DC	MC3
+GNM013035565	#F5F5DC	MC3
+GNM013035615	#F5F5DC	MC3
+GNM013035275	#F5F5DC	MC3
+GNM013035655	#008080	MC30
+GNM013035805	#008080	MC30
+GNM013033635	#008080	MC30
+GNM013032735	#800000	MC6
+GNM013032765	#800000	MC6
+GNM013031345	#800000	MC6
+GNM013032845	#800000	MC6
+GNM013035165	#800000	MC6
+GNM013030235	#800000	MC6
+GNM013032925	#800000	MC6
+GNM013035085	#800000	MC6
+GNM013035125	#800000	MC6
+GNM013035055	#800000	MC6
+GNM013032855	#800000	MC6
+GNM013032945	#800000	MC6
+GNM013032875	#800000	MC6
+GNM013033425	#800000	MC6
+GNM013035235	#800000	MC6
+GNM013035225	#800000	MC6
+GNM013035185	#800000	MC6
+

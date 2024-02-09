@@ -1,0 +1,132 @@
+DATASET_COLORSTRIP
+#In colored strip datasets, each ID is associated to a color box/strip and can have an optional label. Color can be specified in hexadecimal, RGB or RGBA notation. When using RGB or RGBA notation, you cannot use COMMA as the dataset separator
+
+#lines starting with a hash are comments and ignored during parsing
+
+#=================================================================#
+#                    MANDATORY SETTINGS                           #
+#=================================================================#
+#select the separator which is used to delimit the data below (TAB,SPACE or COMMA).This separator must be used throughout this file (except in the SEPARATOR line, which uses space).
+
+SEPARATOR TAB
+
+#label is used in the legend table (can be changed later)
+DATASET_LABEL	Main_cluster
+
+#dataset color (can be changed later)
+COLOR	#ff0000
+
+#=================================================================#
+#                    OPTIONAL SETTINGS                            #
+#=================================================================#
+
+#If COLOR_BRANCHES is set to 1, branches of the tree will be colored according to the colors of the strips above the leaves.
+#When all children of a node have the same color, it will be colored the same, ie. the color will propagate inwards towards the root.
+#COLOR_BRANCHES 0
+
+
+#=================================================================#
+#     all other optional settings can be set or changed later     #
+#           in the web interface (under 'Datasets' tab)           #
+#=================================================================#
+
+#Each dataset can have a legend, which is defined using LEGEND_XXX fields below
+#For each row in the legend, there should be one shape, color and label.
+#Optionally, you can define an exact legend position using LEGEND_POSITION_X and LEGEND_POSITION_Y. To use automatic legend positioning, do NOT define these values
+#Optionally, shape scaling can be present (LEGEND_SHAPE_SCALES). For each shape, you can define a scaling factor between 0 and 1.
+#Shape should be a number between 1 and 6, or any protein domain shape definition.
+#1: square
+#2: circle
+#3: star
+#4: right pointing triangle
+#5: left pointing triangle
+#6: checkmark
+
+LEGEND_TITLE	Main_cluster
+LEGEND_POSITION_X	100
+LEGEND_POSITION_Y	100
+
+LEGEND_SHAPES	1	1	1	1	1	1	1	1
+LEGEND_COLORS	#57ef74	#5647d6	#ffcc99	#82dbff	#cd70ff	#FA8072	#8B8878	#ffeb9c
+LEGEND_LABELS	MC0	MC1	MC2	MC3	MC4	MC5	MC6	MC7
+LEGEND_SHAPE_SCALES	1	1	1	1	1	1	1	1
+
+
+#width of the colored strip
+#STRIP_WIDTH 20
+
+#left margin, used to increase/decrease the spacing to the next dataset. Can be negative, causing datasets to overlap.
+#MARGIN 20
+
+#border width; if set above 0, a border of specified width (in pixels) will be drawn around the color strip 
+#BORDER_WIDTH 0
+
+#border color; used when BORDER_WIDTH is above 0
+#BORDER_COLOR #0000ff
+
+#always show internal values; if set, values associated to internal nodes will be displayed even if these nodes are not collapsed. It could cause overlapping in the dataset display.
+#SHOW_INTERNAL 0
+
+
+#Internal tree nodes can be specified using IDs directly, or using the 'last common ancestor' method described in iTOL help pages
+
+#=================================================================#
+#       Actual data follows after the "DATA" keyword              #
+#=================================================================#
+DATA
+HKCCA0882	#57ef74	MC0
+HKCCA1058	#57ef74	MC0
+HKCCA1059	#57ef74	MC0
+HKCCA1061	#57ef74	MC0
+HKCCA1062	#57ef74	MC0
+HKCCA1064	#57ef74	MC0
+HKCCA1066	#57ef74	MC0
+HKCCA1069	#57ef74	MC0
+HKCCA1071	#57ef74	MC0
+HKCCA1073	#57ef74	MC0
+HKCCA1077	#57ef74	MC0
+HKCCA1079	#57ef74	MC0
+HKCCA1080	#57ef74	MC0
+HKCCA1086	#57ef74	MC0
+HKCCA1087	#57ef74	MC0
+HKCCA1280	#57ef74	MC0
+HKCCA1283	#57ef74	MC0
+HKCCA1287	#57ef74	MC0
+HKCCA1290	#57ef74	MC0
+HKCCA1291	#57ef74	MC0
+HKCCA1302	#57ef74	MC0
+HKCCA1303	#57ef74	MC0
+HKCCA1312	#57ef74	MC0
+HKCCA1331	#57ef74	MC0
+HKCCA1929	#57ef74	MC0
+HKCCA1944	#57ef74	MC0
+HKCCA2237	#57ef74	MC0
+HKCCA2462	#57ef74	MC0
+HKCCA2830	#57ef74	MC0
+HKCC-CH-9324	#57ef74	MC0
+HKCC-CH-9351	#57ef74	MC0
+HKCCD5988	#57ef74	MC0
+HKCCD6035	#57ef74	MC0
+HKCCA1076	#57ef74	MC0
+HKCC-CH-9208	#57ef74	MC0
+HKCCA1013	#57ef74	MC0
+HKCCA1063	#57ef74	MC0
+HKCCA1081	#57ef74	MC0
+FZCC0069	#5647d6	MC1
+FZCC0188	#5647d6	MC1
+HKCCA2468	#5647d6	MC1
+LSUCC1028	#5647d6	MC1
+LSUCC0246	#ffcc99	MC2
+LSUCC0387	#ffcc99	MC2
+HKCCA1082	#82dbff	MC3
+HKCCA1288	#82dbff	MC3
+HKCCA1065	#cd70ff	MC4
+HKCCD7870	#FA8072	MC5
+HKCCA6086	#8B8878	MC6
+HKCCA1006	#ffeb9c	MC7
+HKCCA1006-2	#ffeb9c	MC7
+HKCCA1083	#ffeb9c	MC7
+HKCCA1084	#ffeb9c	MC7
+HKCCA1085	#ffeb9c	MC7
+HKCCA1089	#ffeb9c	MC7
+HKCCA2185	#ffeb9c	MC7

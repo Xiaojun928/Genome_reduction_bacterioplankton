@@ -1,0 +1,354 @@
+DATASET_COLORSTRIP
+#In colored strip datasets, each ID is associated to a color box/strip and can have an optional label. Color can be specified in hexadecimal, RGB or RGBA notation. When using RGB or RGBA notation, you cannot use COMMA as the dataset separator
+
+#lines starting with a hash are comments and ignored during parsing
+
+#=================================================================#
+#                    MANDATORY SETTINGS                           #
+#=================================================================#
+#select the separator which is used to delimit the data below (TAB,SPACE or COMMA).This separator must be used throughout this file (except in the SEPARATOR line, which uses space).
+
+SEPARATOR TAB
+
+#label is used in the legend table (can be changed later)
+DATASET_LABEL	Sample
+
+#dataset color (can be changed later)
+COLOR	#aacc00
+
+#=================================================================#
+#                    OPTIONAL SETTINGS                            #
+#=================================================================#
+
+#If COLOR_BRANCHES is set to 1, branches of the tree will be colored according to the colors of the strips above the leaves.
+#When all children of a node have the same color, it will be colored the same, ie. the color will propagate inwards towards the root.
+#COLOR_BRANCHES 0
+
+
+#=================================================================#
+#     all other optional settings can be set or changed later     #
+#           in the web interface (under 'Datasets' tab)           #
+#=================================================================#
+
+#Each dataset can have a legend, which is defined using LEGEND_XXX fields below
+#For each row in the legend, there should be one shape, color and label.
+#Optionally, you can define an exact legend position using LEGEND_POSITION_X and LEGEND_POSITION_Y. To use automatic legend positioning, do NOT define these values
+#Optionally, shape scaling can be present (LEGEND_SHAPE_SCALES). For each shape, you can define a scaling factor between 0 and 1.
+#Shape should be a number between 1 and 6, or any protein domain shape definition.
+#1: square
+#2: circle
+#3: star
+#4: right pointing triangle
+#5: left pointing triangle
+#6: checkmark
+
+LEGEND_TITLE	Sampling niche
+LEGEND_POSITION_X	100
+LEGEND_POSITION_Y	100
+
+LEGEND_SHAPES	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+LEGEND_COLORS	#008000	#00A36C	#016064	#022d36	#0a1172	#151E3D	#84ceff	#27AE60	#2832c2	#50C878	#63c5da	#6C3483	#784212	#784212	#7CFC00	#808000	#83eefd	#dc3848	#A04000	#C39BD3	#DFFF00	#ff8954	#FAD7A0	#bca052	#45B39D	#CACFD2	#ffe310
+LEGEND_LABELS	cell culture of dinoflagellate	algal culture	estuarine water	Deepwater Horizon Oil Spill	bottom seawater	deep seawater	Oceanic sample	diatom associated	surface seawater	macroalgae-associated	coastal seawater	Nematostella-associated	tidal flat	tidal flat sediment	Emiliania huxleyi	coastal sediment	seawater	Red alga	sediment	coral-asscociated	biofilms of costal ocean	sponge associated	marine sand	offshore sediment	sea sparkle bloom region	surface of microplastic particle	crust from seawater
+LEGEND_SHAPE_SCALES	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+
+
+
+#width of the colored strip
+#STRIP_WIDTH 20
+
+#left margin, used to increase/decrease the spacing to the next dataset. Can be negative, causing datasets to overlap.
+#MARGIN 20
+
+#border width; if set above 0, a border of specified width (in pixels) will be drawn around the color strip 
+#BORDER_WIDTH 0
+
+#border color; used when BORDER_WIDTH is above 0
+#BORDER_COLOR #0000ff
+
+#always show internal values; if set, values associated to internal nodes will be displayed even if these nodes are not collapsed. It could cause overlapping in the dataset display.
+#SHOW_INTERNAL 0
+
+DATA
+Sulfitobacter_sp_EE-36	#63c5da	coastal seawater
+Sulfitobacter_sp_NAS-141	#2832c2	surface seawater
+Sulfitobacter_mediterraneus_KCTC_32188	#63c5da	coastal seawater
+Sulfitobacter_noctilucae_NB-68	#45B39D	sea sparkle bloom region
+Sulfitobacter_noctilucicola_NB-77	#45B39D	sea sparkle bloom region
+Sulfitobacter_donghicola_DSW-25__KCTC_12864__JCM_14565	#63c5da	coastal seawater
+Sulfitobacter_guttiformis_KCTC_32187	#63c5da	coastal seawater
+Sulfitobacter_mediterraneus_1FIGIMAR09	#63c5da	coastal seawater
+Sulfitobacter_pontiacus_3SOLIMAR09	#63c5da	coastal seawater
+Sulfitobacter_donghicola_JCM_14565	#83eefd	seawater
+Sulfitobacter_sp_CB2047	#83eefd	seawater
+Sulfitobacter_sp_HI0021	#83eefd	seawater
+Sulfitobacter_sp_HI0023	#83eefd	seawater
+Sulfitobacter_sp_HI0040	#83eefd	seawater
+Sulfitobacter_sp_HI0076	#83eefd	seawater
+Sulfitobacter_sp_HI0129	#83eefd	seawater
+Sulfitobacter_sp_HI0054	#83eefd	seawater
+Sulfitobacter_geojensis_EhN01	#7CFC00	Emiliania huxleyi
+Sulfitobacter_pontiacus_EhN02	#7CFC00	Emiliania huxleyi
+Sulfitobacter_sp_EhC04	#7CFC00	Emiliania huxleyi
+Sulfitobacter_sp_AM1-D1	#008000	cell culture of dinoflagellate
+Sulfitobacter_sp_CB-A	#83eefd	seawater
+Sulfitobacter_mediterraneus_DSM_12244		NA
+Sulfitobacter_sp_SK011	#0a1172	bottom seawater
+Sulfitobacter_sp_SK012	#A04000	sediment
+Sulfitobacter_guttiformis_DSM_11458		NA
+GNM004349575	#151E3D	deep seawater
+Sulfitobacter_sp_15WGC	#A04000	sediment
+Sulfitobacter_sabulilitoris_HSMS-29	#FAD7A0	marine sand
+GNM006064855	#83eefd	seawater
+Sulfitobacter_sp_THAF37	#CACFD2	surface of microplastic particle
+Sulfitobacter_sp_JBTF-M27	#784212	tidal flat
+GNM013282155		NA
+Sulfitobacter_sp_S0837	#808000	coastal sediment
+Sulfitobacter_geojensis_DSM_101063		NA
+Sulfitobacter_pontiacus_S1704	#A04000	sediment
+Sulfitobacter_undariae_DSM_102234		NA
+Sulfitobacter_noctilucicola_DSM_101015		NA
+Sulfitobacter_sp_TSTF-M16_TSTF-M16_type_strain	#784212	tidal flat sediment
+Sulfitobacter_sp_B30-2		NA
+GNM016801755	#27AE60	diatom associated
+GNM016801775	#27AE60	diatom associated
+GNM016812995	#27AE60	diatom associated
+GNM016813005	#27AE60	diatom associated
+GNM016813015	#27AE60	diatom associated
+GNM016813055	#27AE60	diatom associated
+GNM016813075	#27AE60	diatom associated
+GNM016813095	#27AE60	diatom associated
+GNM016813105	#27AE60	diatom associated
+GNM016813135	#27AE60	diatom associated
+GNM016813145	#27AE60	diatom associated
+GNM016813175	#27AE60	diatom associated
+GNM016813195	#27AE60	diatom associated
+GNM016813205	#27AE60	diatom associated
+GNM016813235	#27AE60	diatom associated
+GNM016813245	#27AE60	diatom associated
+GNM016813275	#27AE60	diatom associated
+GNM016813295	#27AE60	diatom associated
+GNM016813315	#27AE60	diatom associated
+GNM016813335	#27AE60	diatom associated
+GNM016813355	#27AE60	diatom associated
+GNM016813365	#27AE60	diatom associated
+GNM016813395	#27AE60	diatom associated
+GNM016813415	#27AE60	diatom associated
+GNM016813435	#27AE60	diatom associated
+GNM016813455	#27AE60	diatom associated
+GNM016813475	#27AE60	diatom associated
+GNM016813495	#27AE60	diatom associated
+GNM016813515	#27AE60	diatom associated
+GNM016813535	#27AE60	diatom associated
+GNM016813555	#27AE60	diatom associated
+GNM016813575	#27AE60	diatom associated
+GNM016813595	#27AE60	diatom associated
+GNM016813615	#27AE60	diatom associated
+GNM016813635	#27AE60	diatom associated
+GNM016813655	#27AE60	diatom associated
+GNM016813665	#27AE60	diatom associated
+GNM016813695	#27AE60	diatom associated
+GNM016813715	#27AE60	diatom associated
+GNM016813735	#27AE60	diatom associated
+GNM016813745	#27AE60	diatom associated
+GNM016813775	#27AE60	diatom associated
+GNM016813795	#27AE60	diatom associated
+GNM016813805	#27AE60	diatom associated
+GNM016813835	#27AE60	diatom associated
+GNM016813855	#27AE60	diatom associated
+GNM016813875	#27AE60	diatom associated
+GNM016813895	#27AE60	diatom associated
+GNM016813905	#27AE60	diatom associated
+GNM016813925	#27AE60	diatom associated
+GNM016813935	#27AE60	diatom associated
+GNM016813955	#27AE60	diatom associated
+GNM016813995	#27AE60	diatom associated
+GNM016814015	#27AE60	diatom associated
+GNM016814035	#27AE60	diatom associated
+GNM016814045	#27AE60	diatom associated
+GNM016814055	#27AE60	diatom associated
+GNM016814095	#27AE60	diatom associated
+GNM016814115	#27AE60	diatom associated
+GNM016814125	#27AE60	diatom associated
+GNM016814155	#27AE60	diatom associated
+GNM016814175	#27AE60	diatom associated
+GNM016814195	#27AE60	diatom associated
+GNM016814205	#27AE60	diatom associated
+GNM016814225	#27AE60	diatom associated
+GNM016814245	#27AE60	diatom associated
+GNM016814275	#27AE60	diatom associated
+GNM016814295	#27AE60	diatom associated
+GNM016814315	#27AE60	diatom associated
+GNM016814325	#27AE60	diatom associated
+GNM016814335	#27AE60	diatom associated
+GNM016814375	#27AE60	diatom associated
+GNM016814395	#27AE60	diatom associated
+GNM016814415	#27AE60	diatom associated
+GNM016814435	#27AE60	diatom associated
+GNM016814455	#27AE60	diatom associated
+GNM016814475	#27AE60	diatom associated
+GNM016814495	#27AE60	diatom associated
+GNM016814515	#27AE60	diatom associated
+GNM016814535	#27AE60	diatom associated
+GNM016814555	#27AE60	diatom associated
+GNM016814565	#27AE60	diatom associated
+GNM016814595	#27AE60	diatom associated
+GNM016814605	#27AE60	diatom associated
+GNM016814635	#27AE60	diatom associated
+GNM016814645	#27AE60	diatom associated
+GNM016814675	#27AE60	diatom associated
+GNM016814695	#27AE60	diatom associated
+GNM016814715	#27AE60	diatom associated
+GNM016814735	#27AE60	diatom associated
+GNM016814755	#27AE60	diatom associated
+GNM016814765	#27AE60	diatom associated
+GNM016814775	#27AE60	diatom associated
+GNM016814815	#27AE60	diatom associated
+GNM016814835	#27AE60	diatom associated
+GNM016814855	#27AE60	diatom associated
+GNM016814865	#27AE60	diatom associated
+GNM016814895	#27AE60	diatom associated
+GNM016814915	#27AE60	diatom associated
+GNM016814935	#27AE60	diatom associated
+GNM016814955	#27AE60	diatom associated
+GNM016814975	#27AE60	diatom associated
+GNM016814995	#27AE60	diatom associated
+GNM016815005	#27AE60	diatom associated
+GNM016815035	#27AE60	diatom associated
+GNM016815055	#27AE60	diatom associated
+GNM016815075	#27AE60	diatom associated
+GNM016815085	#27AE60	diatom associated
+GNM016815115	#27AE60	diatom associated
+GNM016815135	#27AE60	diatom associated
+GNM016815155	#27AE60	diatom associated
+GNM016815175	#27AE60	diatom associated
+GNM016815195	#27AE60	diatom associated
+GNM016815215	#27AE60	diatom associated
+GNM016815225	#27AE60	diatom associated
+GNM017743885	#27AE60	diatom associated
+GNM017743915	#C39BD3	coral-asscociated
+GNM018200035	#A04000	sediment
+GNM019392245	#00A36C	algal culture
+GNM021043185	#016064	estuarine water
+GNM021043225	#016064	estuarine water
+GNM021735935	#84ceff	Oceanic sample
+GNM021735945	#84ceff	Oceanic sample
+GNM021736025	#84ceff	Oceanic sample
+GNM022788655	#83eefd	seawater
+GNM022788675	#83eefd	seawater
+GNM022788715	#83eefd	seawater
+GNM022788735	#A04000	sediment
+Sulfitobacter_sp_1A02497	#2832c2	surface seawater
+Sulfitobacter_sp_1A03437	#2832c2	surface seawater
+Sulfitobacter_sp_1A07028	#2832c2	surface seawater
+Sulfitobacter_sp_1A08799	#2832c2	surface seawater
+Sulfitobacter_sp_1A08805	#2832c2	surface seawater
+Sulfitobacter_sp_H127	#83eefd	seawater
+Sulfitobacter_sp_H14-1	#83eefd	seawater
+Sulfitobacter_sp_KE12	#ff8954	sponge associated
+Sulfitobacter_sp_KE26	#ff8954	sponge associated
+Sulfitobacter_sp_KE27	#ff8954	sponge associated
+Sulfitobacter_sp_KE29	#ff8954	sponge associated
+Sulfitobacter_sp_KE31	#ff8954	sponge associated
+Sulfitobacter_sp_KE32	#ff8954	sponge associated
+Sulfitobacter_sp_KE33	#ff8954	sponge associated
+Sulfitobacter_sp_KE34	#ff8954	sponge associated
+Sulfitobacter_sp_KE35	#ff8954	sponge associated
+Sulfitobacter_sp_KE37	#ff8954	sponge associated
+Sulfitobacter_sp_KE38	#ff8954	sponge associated
+Sulfitobacter_sp_KE39	#ff8954	sponge associated
+Sulfitobacter_sp_KE42	#ff8954	sponge associated
+Sulfitobacter_sp_KE43	#ff8954	sponge associated
+Sulfitobacter_sp_KE5	#ff8954	sponge associated
+Sulfitobacter_sp_Ks11	#ff8954	sponge associated
+Sulfitobacter_sp_Ks13	#ff8954	sponge associated
+Sulfitobacter_sp_Ks16	#ff8954	sponge associated
+Sulfitobacter_sp_Ks17	#ff8954	sponge associated
+Sulfitobacter_sp_Ks18	#ff8954	sponge associated
+Sulfitobacter_sp_Ks34	#ff8954	sponge associated
+Sulfitobacter_sp_Ks35	#ff8954	sponge associated
+Sulfitobacter_sp_Ks38	#ff8954	sponge associated
+Sulfitobacter_sp_Ks39	#ff8954	sponge associated
+Sulfitobacter_sp_Ks41	#ff8954	sponge associated
+Sulfitobacter_sp_Ks42	#ff8954	sponge associated
+Sulfitobacter_sp_Ks43	#ff8954	sponge associated
+Sulfitobacter_sp_Ks46	#ff8954	sponge associated
+Sulfitobacter_sp_KS8	#ff8954	sponge associated
+Sulfitobacter_sp_M05	#27AE60	diatom associated
+Sulfitobacter_sp_M24	#27AE60	diatom associated
+Sulfitobacter_sp_M28	#27AE60	diatom associated
+Sulfitobacter_sp_M36	#27AE60	diatom associated
+Sulfitobacter_sp_M48	#27AE60	diatom associated
+Sulfitobacter_sp_M51	#27AE60	diatom associated
+Sulfitobacter_sp_M53	#27AE60	diatom associated
+Sulfitobacter_sp_M54	#27AE60	diatom associated
+Sulfitobacter_sp_M56	#27AE60	diatom associated
+Sulfitobacter_sp_M57	#27AE60	diatom associated
+Sulfitobacter_sp_M60	#27AE60	diatom associated
+Sulfitobacter_sp_M62	#27AE60	diatom associated
+Sulfitobacter_sp_M63	#27AE60	diatom associated
+Sulfitobacter_sp_M71	#27AE60	diatom associated
+Sulfitobacter_sp_M72	#27AE60	diatom associated
+Sulfitobacter_sp_M74	#27AE60	diatom associated
+Sulfitobacter_sp_M77	#27AE60	diatom associated
+Sulfitobacter_sp_M85	#27AE60	diatom associated
+Sulfitobacter_sp_M95	#27AE60	diatom associated
+Sulfitobacter_sp_S32	#27AE60	diatom associated
+Sulfitobacter_sp_S46	#27AE60	diatom associated
+Sulfitobacter_sp_S62	#27AE60	diatom associated
+Sulfitobacter_sp_S66	#27AE60	diatom associated
+Sulfitobacter_sp_S74	#27AE60	diatom associated
+Sulfitobacter_sp_TB376	#ffe310	crust from seawater
+Sulfitobacter_sp_WH023-1	#83eefd	seawater
+Sulfitobacter_sp_WH111	#83eefd	seawater
+Sulfitobacter_delicatus_DSM_16477		NA
+Sulfitobacter_brevis_DSM_17584		NA
+Sulfitobacter_brevis_DSM_11443		NA
+Sulfitobacter_dubius_DSM_16472		NA
+Sulfitobacter_marinus_DSM_23422		NA
+GNM900313045	#C39BD3	coral-asscociated
+Sulfitobacter_sp_DFL-23	#008000	cell culture of dinoflagellate
+Sulfitobacter_algicola_1151	#63c5da	coastal seawater
+Sulfitobacter_geojensis_MM-124	#63c5da	coastal seawater
+Sulfitobacter_faviae_SCSIO_W_1865	#C39BD3	coral-asscociated
+Sulfitobacter_faviae_SCSIO_W_1866	#C39BD3	coral-asscociated
+Sulfitobacter_faviae_S5-53	#C39BD3	coral-asscociated
+Sulfitobacter_indolifex_SAORIC-263	#151E3D	deep seawater
+Sulfitobacter_sp_20_GPM-1509m	#022d36	Deepwater Horizon Oil Spill
+Sulfitobacter_sp_M368	#DFFF00	biofilms of costal ocean
+Sulfitobacter_sp_S190	#DFFF00	biofilms of costal ocean
+Sulfitobacter_sp_S223	#DFFF00	biofilms of costal ocean
+Sulfitobacter_sp_W002	#DFFF00	biofilms of costal ocean
+Sulfitobacter_sp_W027	#DFFF00	biofilms of costal ocean
+Sulfitobacter_sp_W074	#DFFF00	biofilms of costal ocean
+Sulfitobacter_mediterraneus_M342	#DFFF00	biofilms of costal ocean
+Sulfitobacter_pontiacus_W028	#DFFF00	biofilms of costal ocean
+Sulfitobacter_geojensis_3-1117-G	#50C878	macroalgae-associated
+Sulfitobacter_mediterraneus_4-150	#50C878	macroalgae-associated
+Sulfitobacter_sp_233-3Z	#50C878	macroalgae-associated
+Sulfitobacter_sp_2-475A	#50C878	macroalgae-associated
+Sulfitobacter_sp_2-538A	#50C878	macroalgae-associated
+Sulfitobacter_sp_3-1118-G	#50C878	macroalgae-associated
+Sulfitobacter_sp_3-1129-G	#50C878	macroalgae-associated
+Sulfitobacter_sp_3-1207-3Z	#50C878	macroalgae-associated
+Sulfitobacter_sp_3-1232-G	#50C878	macroalgae-associated
+Sulfitobacter_sp_3-125-G	#50C878	macroalgae-associated
+Sulfitobacter_sp_3-2022	#50C878	macroalgae-associated
+Sulfitobacter_sp_831	#50C878	macroalgae-associated
+Sulfitobacter_sp_JL08	#A04000	sediment
+Sulfitobacter_pontiacus_DSM_10014		NA
+Sulfitobacter_pacificus_NBRC_109915		NA
+Sulfitobacter_sp_G21635-S1	#6C3483	Nematostella-associated
+Sulfitobacter_dubius_G21609-S1	#6C3483	Nematostella-associated
+Sulfitobacter_sp_F26169L	#bca052	offshore sediment
+Sulfitobacter_sp_F26204	#bca052	offshore sediment
+Sulfitobacter_porphyrae_NBRC_109054	#dc3848	Red alga
+Sulfitobacter_indolifex_HEL-45	#83eefd	seawater
+Sulfitobacter_sp_AH-578-B22	#83eefd	seawater
+Sulfitobacter_sp_D7	#83eefd	seawater
+Sulfitobacter_sp_HI0027	#83eefd	seawater
+Sulfitobacter_sp_PR48	#83eefd	seawater
+Sulfitobacter_sp_KE28	#ff8954	sponge associated
+Sulfitobacter_sp_SK025	#2832c2	surface seawater
+
+
+

@@ -1,0 +1,65 @@
+#NEXUS
+[R-package APE, Sun Jan 14 16:45:57 2024]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX = 26;
+	TAXLABELS
+		Haloferax_volcanii_DS2
+		Thermococcus_eurythermalis_A501
+		Mycobacterium_smegmatis_MC2_155
+		Bacillus_subtilis_NCIB_3610
+		Mesoplasma_florum_L1
+		Staphylococcus_epidermidis_ATCC_12228
+		Staphylococcus_aureus_ATCC_25923
+		Lactococcus_lactis_DSMZ20481
+		Prochlorococcus_marinus_AS9601
+		Pseudomonas_aeruginosa_PA14
+		Teredinibacter_turnerae
+		Vibrio_shilonii_AK1
+		Vibrio_cholerae_2740_80
+		Vibrio_fischeri_ES114
+		Salmonella_enterica
+		Escherichia_coli_K_12_MG1655
+		Photorhabdus_luminescens_ATCC29999
+		Burkholderia_cenocepacia_HI2424
+		Janthinobacterium_lividum_KBS0711
+		Agrobacterium_tumefaciens_C58
+		Caulobacter_crescentus_NA1000
+		Rhodobacter_sphaeroides_ATCC17025
+		Dinoroseobacter_shibae_DFL_12
+		Sulfitobacter_sp_EE-36
+		Ruegeria_pomeroyi_DSS_3
+		CHUG_sp_HKCCA1288
+	;
+END;
+BEGIN TREES;
+	TRANSLATE
+		1	Haloferax_volcanii_DS2,
+		2	Thermococcus_eurythermalis_A501,
+		3	Mycobacterium_smegmatis_MC2_155,
+		4	Bacillus_subtilis_NCIB_3610,
+		5	Mesoplasma_florum_L1,
+		6	Staphylococcus_epidermidis_ATCC_12228,
+		7	Staphylococcus_aureus_ATCC_25923,
+		8	Lactococcus_lactis_DSMZ20481,
+		9	Prochlorococcus_marinus_AS9601,
+		10	Pseudomonas_aeruginosa_PA14,
+		11	Teredinibacter_turnerae,
+		12	Vibrio_shilonii_AK1,
+		13	Vibrio_cholerae_2740_80,
+		14	Vibrio_fischeri_ES114,
+		15	Salmonella_enterica,
+		16	Escherichia_coli_K_12_MG1655,
+		17	Photorhabdus_luminescens_ATCC29999,
+		18	Burkholderia_cenocepacia_HI2424,
+		19	Janthinobacterium_lividum_KBS0711,
+		20	Agrobacterium_tumefaciens_C58,
+		21	Caulobacter_crescentus_NA1000,
+		22	Rhodobacter_sphaeroides_ATCC17025,
+		23	Dinoroseobacter_shibae_DFL_12,
+		24	Sulfitobacter_sp_EE-36,
+		25	Ruegeria_pomeroyi_DSS_3,
+		26	CHUG_sp_HKCCA1288
+	;
+	TREE * UNTITLED = [&R] ((1:1.378408264,2:0.9811149652):2.61556,(((3:0.819429,(4:0.1920410617,((5:1.146416953,(6:0.0457001919,7:0.0435460998):0.2482950088):0.0083620148,8:0.562443561):0.04608082):0.3613583159):0.0481733981,9:0.960624032):1.1771e-06,((((10:0.1708932525,11:0.233060884):0.0882055263,(((12:0.1661187932,13:0.0436894953):0.0228035157,14:0.0613003769):0.0814633396,((15:0.0087312454,16:0.0069583801):0.0421652729,17:0.0488733655):0.0835620503):0.12874):0.0913532067,(18:0.1285210096,19:0.1618086011):0.2535579727):0.2063594661,(20:0.2593005844,(21:0.3161937814,(22:0.1776980551,(23:0.1250850769,((24:0.0773429444,25:0.0627936569):0.0271812277,26:0.1014822343):0.009581187):0.0281219913):0.2205086393):0.0337345225):0.2961514842):0.219394):2.61556);
+END;

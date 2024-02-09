@@ -1,0 +1,27 @@
+Species	Mutation rate	Total CDS (Mb)	Mut_load	Median of πS	Ne_median	Genome size	GC	group	id
+Agrobacterium_tumefaciens_C58	2.92E-10	4.999	1.46E-03	0.029	4.93E+07	5.67	0.568534306	Gracilicutes	1
+Bacillus_subtilis_NCIB_3610	3.28E-10	3.572	1.17E-03	0.027	4.19E+07	4.29	0.560329027	Terrabacteria	2
+Burkholderia_cenocepacia_HI2424	1.33E-10	6.741	8.97E-04	0.011	4.12E+07	7.7	0.604694621	Gracilicutes	3
+Caulobacter_crescentus_NA1000	3.46E-10	3.669	1.27E-03	0.036	5.20E+07	4.04	0.565481161	Gracilicutes	4
+Escherichia_coli_K_12_MG1655	2.00E-10	3.9	7.80E-04	0.025	6.35E+07	4.64	0.572637972	Gracilicutes	5
+Haloferax_volcanii_DS2	3.15E-10	3.38	1.07E-03	0.024	3.76E+07	4.01	0.56652644	Archaea	6
+Janthinobacterium_lividum_KBS0711	1.22E-10	4.206	5.13E-04	0.006	2.31E+07	4.99	0.562710442	Gracilicutes	7
+Lactococcus_lactis_DSMZ20481	1.66E-09	2.26	3.75E-03	0.016	4.79E+06	2.73	0.550021274	Terrabacteria	8
+Mesoplasma_florum_L1	9.78E-09	0.734	7.18E-03	0.015	7.88E+05	0.79	0.573509825	Terrabacteria	9
+Mycobacterium_smegmatis_MC2_155	5.27E-10	6.51	3.43E-03	0.021	1.98E+07	6.99	0.570288398	Terrabacteria	10
+Pseudomonas_aeruginosa_PA14	7.90E-11	5.902	4.68E-04	0.01	6.56E+07	6.53	0.575809272	Gracilicutes	11
+Rhodobacter_sphaeroides_ATCC17025	1.17E-10	4.016	4.70E-04	0.023	9.94E+07	4.56	0.535524723	Gracilicutes	12
+Ruegeria_pomeroyi_DSS_3	1.38E-10	4.149	5.73E-04	0.051	1.86E+08	4.6	0.540467283	Gracilicutes	13
+Salmonella_enterica	1.77E-10	4.295	7.60E-04	0.023	6.37E+07	4.95	0.559519441	Gracilicutes	14
+Staphylococcus_aureus_ATCC_25923	4.38E-10	2.32	1.02E-03	0.025	2.90E+07	2.81	0.567415653	Terrabacteria	15
+Staphylococcus_epidermidis_ATCC_12228	7.40E-10	2.1	1.55E-03	0.031	2.07E+07	2.57	0.531043536	Terrabacteria	16
+Teredinibacter_turnerae	1.14E-09	4.451	5.07E-03	0.03	1.30E+07	5.19	0.56039921	Gracilicutes	17
+Vibrio_cholerae_2740_80	1.07E-10	3.436	3.68E-04	0.047	2.21E+08	4.07	0.563277222	Gracilicutes	18
+Vibrio_fischeri_ES114	2.07E-10	3.72	7.70E-04	0.076	1.84E+08	4.27	0.524613472	Gracilicutes	19
+Vibrio_shilonii_AK1	2.29E-10	4.904	1.12E-03	0.051	1.12E+08	5.7	0.56662883	Gracilicutes	20
+Thermococcus_eurythermalis_A501	7.16E-09	1.905	1.36E-02	0.06	4.21E+06	2.13	0.566807455	Archaea	30
+Photorhabdus_luminescens_ATCC29999	5.90E-11	4.467	2.64E-04	0.049	4.18E+08	5.29	0.4292882	Gracilicutes	31
+Prochlorococcus_marinus_AS9601	3.50E-10	1.494	5.23E-04	0.012	1.68E+07	1.67	0.313215	Terrabacteria	32
+Dinoroseobacter_shibae_DFL_12	1.81E-10	3.924	7.10E-04	0.027	7.46E+07	4.418	-	Gracilicutes	33
+Sulfitobacter_sp_EE-36	3.57E-10	2.421	8.64E-04	0.028	3.92E+07	3.338	-	Gracilicutes	34
+CHUG_sp_HKCCA1288	7.14E-10	2.433	1.74E-03	0.028	1.96E+07	2.663	-	Gracilicutes	35

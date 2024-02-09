@@ -1,0 +1,83 @@
+#NEXUS
+[R-package APE, Tue Jan  2 13:04:53 2024]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX = 35;
+	TAXLABELS
+		Haloferax_volcanii_DS2
+		Thermococcus_eurythermalis_A501
+		Kineococcus_radiotolerans_SRS30216
+		Micrococcus_sp._KBS0714
+		Arthrobacter_sp._KBS0703
+		Mycobacterium_smegmatis_MC2_155
+		Deinococcus_radiodurans_R1
+		Bacillus_subtilis_NCIB_3610
+		Mesoplasma_florum_L1
+		Staphylococcus_epidermidis_ATCC_12228
+		Staphylococcus_aureus_ATCC_25923
+		Lactococcus_lactis_DSMZ20481
+		Prochlorococcus_marinus_AS9601
+		Gemmata_obscuriglobus_DSM5831
+		Flavobacterium_sp._KBS0721
+		Leeuwenhoekiella_sp._ZYFB001
+		Nonlabens_sp._SY33080
+		Pseudomonas_aeruginosa_PA14
+		Teredinibacter_turnerae
+		Vibrio_shilonii_AK1
+		Vibrio_cholerae_2740_80
+		Vibrio_fischeri_ES114
+		Salmonella_enterica
+		Escherichia_coli_K_12_MG1655
+		Photorhabdus_luminescens_ATCC29999
+		Colwellia_psychrerythraea_34H
+		Burkholderia_cenocepacia_HI2424
+		Janthinobacterium_lividum_KBS0711
+		Agrobacterium_tumefaciens_C58
+		Caulobacter_crescentus_NA1000
+		Rhodobacter_sphaeroides_ATCC17025
+		Dinoroseobacter_shibae_DFL_12
+		Sulfitobacter_sp_EE-36
+		Ruegeria_pomeroyi_DSS_3
+		CHUG_sp_HKCCA1288
+	;
+END;
+BEGIN TREES;
+	TRANSLATE
+		1	Haloferax_volcanii_DS2,
+		2	Thermococcus_eurythermalis_A501,
+		3	Kineococcus_radiotolerans_SRS30216,
+		4	Micrococcus_sp._KBS0714,
+		5	Arthrobacter_sp._KBS0703,
+		6	Mycobacterium_smegmatis_MC2_155,
+		7	Deinococcus_radiodurans_R1,
+		8	Bacillus_subtilis_NCIB_3610,
+		9	Mesoplasma_florum_L1,
+		10	Staphylococcus_epidermidis_ATCC_12228,
+		11	Staphylococcus_aureus_ATCC_25923,
+		12	Lactococcus_lactis_DSMZ20481,
+		13	Prochlorococcus_marinus_AS9601,
+		14	Gemmata_obscuriglobus_DSM5831,
+		15	Flavobacterium_sp._KBS0721,
+		16	Leeuwenhoekiella_sp._ZYFB001,
+		17	Nonlabens_sp._SY33080,
+		18	Pseudomonas_aeruginosa_PA14,
+		19	Teredinibacter_turnerae,
+		20	Vibrio_shilonii_AK1,
+		21	Vibrio_cholerae_2740_80,
+		22	Vibrio_fischeri_ES114,
+		23	Salmonella_enterica,
+		24	Escherichia_coli_K_12_MG1655,
+		25	Photorhabdus_luminescens_ATCC29999,
+		26	Colwellia_psychrerythraea_34H,
+		27	Burkholderia_cenocepacia_HI2424,
+		28	Janthinobacterium_lividum_KBS0711,
+		29	Agrobacterium_tumefaciens_C58,
+		30	Caulobacter_crescentus_NA1000,
+		31	Rhodobacter_sphaeroides_ATCC17025,
+		32	Dinoroseobacter_shibae_DFL_12,
+		33	Sulfitobacter_sp_EE-36,
+		34	Ruegeria_pomeroyi_DSS_3,
+		35	CHUG_sp_HKCCA1288
+	;
+	TREE * UNTITLED = [&R] ((1:1.378408264,2:0.9811149652):2.61556,((((((3:0.1662008958,(4:0.1530480334,5:0.1432163778):0.1074708945):0.1058217837,6:0.2476268722):0.5205307861,7:0.8267419458):0.0512707279,(8:0.1920410617,((9:1.146416953,(10:0.0457001919,11:0.0435460998):0.2482950088):0.0083620148,12:0.562443561):0.04608082):0.3613583159):0.0481733981,13:0.960624032):1.1771e-06,((14:1.467452351,(15:0.1223850716,(16:0.0858735609,17:0.1386974835):0.0360360282):0.7582308824):0.045117887,((((18:0.1708932525,19:0.233060884):0.0882055263,((((20:0.1661187932,21:0.0436894953):0.0228035157,22:0.0613003769):0.0814633396,((23:0.0087312454,24:0.0069583801):0.0421652729,25:0.0488733655):0.0835620503):0.0409986087,26:0.2788760437):0.0877414205):0.0913532067,(27:0.1285210096,28:0.1618086011):0.2535579727):0.2063594661,(29:0.2593005844,(30:0.3161937814,(31:0.1776980551,(32:0.1250850769,((33:0.0773429444,34:0.0627936569):0.0271812277,35:0.1014822343):0.009581187):0.0281219913):0.2205086393):0.0337345225):0.2961514842):0.1575907443):0.0618033702):2.61556);
+END;

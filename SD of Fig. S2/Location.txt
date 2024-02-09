@@ -1,0 +1,141 @@
+DATASET_COLORSTRIP
+#In colored strip datasets, each ID is associated to a color box/strip and can have an optional label. Color can be specified in hexadecimal, RGB or RGBA notation. When using RGB or RGBA notation, you cannot use COMMA as the dataset separator
+
+#lines starting with a hash are comments and ignored during parsing
+
+#=================================================================#
+#                    MANDATORY SETTINGS                           #
+#=================================================================#
+#select the separator which is used to delimit the data below (TAB,SPACE or COMMA).This separator must be used throughout this file (except in the SEPARATOR line, which uses space).
+
+SEPARATOR TAB
+
+#label is used in the legend table (can be changed later)
+DATASET_LABEL	Location
+
+#dataset color (can be changed later)
+COLOR	#ff0000
+
+#=================================================================#
+#                    OPTIONAL SETTINGS                            #
+#=================================================================#
+
+#If COLOR_BRANCHES is set to 1, branches of the tree will be colored according to the colors of the strips above the leaves.
+#When all children of a node have the same color, it will be colored the same, ie. the color will propagate inwards towards the root.
+#COLOR_BRANCHES 0
+
+
+#=================================================================#
+#     all other optional settings can be set or changed later     #
+#           in the web interface (under 'Datasets' tab)           #
+#=================================================================#
+
+#Each dataset can have a legend, which is defined using LEGEND_XXX fields below
+#For each row in the legend, there should be one shape, color and label.
+#Optionally, you can define an exact legend position using LEGEND_POSITION_X and LEGEND_POSITION_Y. To use automatic legend positioning, do NOT define these values
+#Optionally, shape scaling can be present (LEGEND_SHAPE_SCALES). For each shape, you can define a scaling factor between 0 and 1.
+#Shape should be a number between 1 and 6, or any protein domain shape definition.
+#1: square
+#2: circle
+#3: star
+#4: right pointing triangle
+#5: left pointing triangle
+#6: checkmark
+
+LEGEND_TITLE	Location
+LEGEND_POSITION_X	100
+LEGEND_POSITION_Y	100
+LEGEND_SHAPES	1	1	1	1	1	1	1
+LEGEND_COLORS	#9dfcf8	#f28d25	#ff2f86	#45a4ff	#bfe330	#7f58ff	#75ff26
+LEGEND_LABELS	Fu Zhou - Pingtang island,  the East China Sea	Hong Kong - Chek Chau	Hong Kong - Lobster Bay	Hong Kong - Port Island	Hong Kong - Tolo Harbor	Hong Kong - Wong Wan Chau	Mexico - the northern Gulf
+LEGEND_SHAPE_SCALES	1	1	1	1	1	1	1
+
+#width of the colored strip
+#STRIP_WIDTH 20
+
+#left margin, used to increase/decrease the spacing to the next dataset. Can be negative, causing datasets to overlap.
+#MARGIN 20
+
+#border width; if set above 0, a border of specified width (in pixels) will be drawn around the color strip 
+#BORDER_WIDTH 0
+
+#border color; used when BORDER_WIDTH is above 0
+#BORDER_COLOR #0000ff
+
+#always show internal values; if set, values associated to internal nodes will be displayed even if these nodes are not collapsed. It could cause overlapping in the dataset display.
+#SHOW_INTERNAL 0
+
+
+#Internal tree nodes can be specified using IDs directly, or using the 'last common ancestor' method described in iTOL help pages
+
+#=================================================================#
+#       Actual data follows after the "DATA" keyword              #
+#=================================================================#
+
+DATA
+
+MAG11	#bfe330	Coast of the Arabian Gulf
+DAH.1	#e8b8fc	Esturies of South China
+FZCC0069	#9dfcf8	Fu Zhou - Pingtang island,  the East China Sea
+FZCC0188	#9dfcf8	Fu Zhou - Pingtang island,  the East China Sea
+HKCCD7870	#f28d25	Hong Kong - Chek Chau
+HKCCA1058	#ff2f86	Hong Kong - Lobster Bay
+HKCCA1065	#ff2f86	Hong Kong - Lobster Bay
+HKCCA1288	#ff2f86	Hong Kong - Lobster Bay
+HKCCA1006	#ff2f86	Hong Kong - Lobster Bay
+HKCCA1006-2	#ff2f86	Hong Kong - Lobster Bay
+HKCCA1013	#ff2f86	Hong Kong - Lobster Bay
+HKCCA1059	#ff2f86	Hong Kong - Lobster Bay
+HKCCA1061	#ff2f86	Hong Kong - Lobster Bay
+HKCCA1062	#ff2f86	Hong Kong - Lobster Bay
+HKCCA1063	#ff2f86	Hong Kong - Lobster Bay
+HKCCA1064	#ff2f86	Hong Kong - Lobster Bay
+HKCCA1066	#ff2f86	Hong Kong - Lobster Bay
+HKCCA1069	#ff2f86	Hong Kong - Lobster Bay
+HKCCA1071	#ff2f86	Hong Kong - Lobster Bay
+HKCCA1073	#ff2f86	Hong Kong - Lobster Bay
+HKCCA1076	#ff2f86	Hong Kong - Lobster Bay
+HKCCA1077	#ff2f86	Hong Kong - Lobster Bay
+HKCCA1078	#ff2f86	Hong Kong - Lobster Bay
+HKCCA1079	#ff2f86	Hong Kong - Lobster Bay
+HKCCA1080	#ff2f86	Hong Kong - Lobster Bay
+HKCCA1081	#ff2f86	Hong Kong - Lobster Bay
+HKCCA1082	#ff2f86	Hong Kong - Lobster Bay
+HKCCA1083	#ff2f86	Hong Kong - Lobster Bay
+HKCCA1084	#ff2f86	Hong Kong - Lobster Bay
+HKCCA1085	#ff2f86	Hong Kong - Lobster Bay
+HKCCA1086	#ff2f86	Hong Kong - Lobster Bay
+HKCCA1087	#ff2f86	Hong Kong - Lobster Bay
+HKCCA1089	#ff2f86	Hong Kong - Lobster Bay
+HKCCA1280	#ff2f86	Hong Kong - Lobster Bay
+HKCCA1283	#ff2f86	Hong Kong - Lobster Bay
+HKCCA1287	#ff2f86	Hong Kong - Lobster Bay
+HKCCA1290	#ff2f86	Hong Kong - Lobster Bay
+HKCCA1291	#ff2f86	Hong Kong - Lobster Bay
+HKCCA1302	#ff2f86	Hong Kong - Lobster Bay
+HKCCA1303	#ff2f86	Hong Kong - Lobster Bay
+HKCCA1312	#ff2f86	Hong Kong - Lobster Bay
+HKCCA1331	#ff2f86	Hong Kong - Lobster Bay
+HKCCA2462	#45a4ff	Hong Kong - Port Island
+HKCC-CH-9324	#bfe330	Hong Kong - Tolo Harbor
+HKCC-CH-9351	#bfe330	Hong Kong - Tolo Harbor
+HKCC-CH-9208	#bfe330	Hong Kong - Tolo Harbor
+HKCCD5988	#7f58ff	Hong Kong - Wong Wan Chau
+HKCCD6035	#7f58ff	Hong Kong - Wong Wan Chau
+HKCCA0882	#7f58ff	Hong Kong - Wong Wan Chau
+HKCCA2185	#7f58ff	Hong Kong - Wong Wan Chau
+HKCCA2237	#7f58ff	Hong Kong - Wong Wan Chau
+HKCCA1929	#7f58ff	Hong Kong - Wong Wan Chau
+HKCCA1944	#7f58ff	Hong Kong - Wong Wan Chau
+HKCCA2468	#7f58ff	Hong Kong - Wong Wan Chau
+HKCCA2830	#7f58ff	Hong Kong - Wong Wan Chau
+HKCCA6086	#7f58ff	Hong Kong - Wong Wan Chau
+SRR4030076	#fff79c	La Parguera - Puerto Rico
+LSUCC0246	#75ff26	Mexico - the northern Gulf 
+LSUCC0387	#75ff26	Mexico - the northern Gulf 
+LSUCC1028	#75ff26	Mexico - the northern Gulf 
+HKCC-CH-154	#bfe330	Hong Kong - Tolo Harbor
+HKCC-CH-9370	#bfe330	Hong Kong - Tolo Harbor
+HKCC-CH-9324	#bfe330	Hong Kong - Tolo Harbor
+HKCC-CH-9305	#bfe330	Hong Kong - Tolo Harbor
+

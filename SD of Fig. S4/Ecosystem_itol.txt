@@ -1,0 +1,431 @@
+DATASET_COLORSTRIP
+#In colored strip datasets, each ID is associated to a color box/strip and can have an optional label. Color can be specified in hexadecimal, RGB or RGBA notation. When using RGB or RGBA notation, you cannot use COMMA as the dataset separator
+
+#lines starting with a hash are comments and ignored during parsing
+
+#=================================================================#
+#                    MANDATORY SETTINGS                           #
+#=================================================================#
+#select the separator which is used to delimit the data below (TAB,SPACE or COMMA).This separator must be used throughout this file (except in the SEPARATOR line, which uses space).
+
+SEPARATOR TAB
+
+#label is used in the legend table (can be changed later)
+DATASET_LABEL	Sample
+
+#dataset color (can be changed later)
+COLOR	#aacc00
+
+#=================================================================#
+#                    OPTIONAL SETTINGS                            #
+#=================================================================#
+
+#If COLOR_BRANCHES is set to 1, branches of the tree will be colored according to the colors of the strips above the leaves.
+#When all children of a node have the same color, it will be colored the same, ie. the color will propagate inwards towards the root.
+#COLOR_BRANCHES 0
+
+
+#=================================================================#
+#     all other optional settings can be set or changed later     #
+#           in the web interface (under 'Datasets' tab)           #
+#=================================================================#
+
+#Each dataset can have a legend, which is defined using LEGEND_XXX fields below
+#For each row in the legend, there should be one shape, color and label.
+#Optionally, you can define an exact legend position using LEGEND_POSITION_X and LEGEND_POSITION_Y. To use automatic legend positioning, do NOT define these values
+#Optionally, shape scaling can be present (LEGEND_SHAPE_SCALES). For each shape, you can define a scaling factor between 0 and 1.
+#Shape should be a number between 1 and 6, or any protein domain shape definition.
+#1: square
+#2: circle
+#3: star
+#4: right pointing triangle
+#5: left pointing triangle
+#6: checkmark
+
+LEGEND_TITLE	Sampling niche
+LEGEND_POSITION_X	100
+LEGEND_POSITION_Y	100
+
+LEGEND_SHAPES	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+LEGEND_COLORS	#994d00	#3CB44B	#ff3300	#D2F53C	#FFE119	#0082C8	#46F0F0	#911EB4	#F032E6	#008080	#2F4F4F	#808000	#F58231	#CD5C5C	#808080	#E6BEFF	#AAFFC3	#FFD8B1	#000075	#FFFFF0
+LEGEND_LABELS	Brown algae	Coral	Mangrove	Offshore	Bare flat	Sponge	pelagic zone 	Geothermal lake	Ark clam	River Estuary	Marine aquaria system	Bathypelagic ocean	Thermal springs	Red algae	Squid	Sea pineapple	Non marine	Oyster	Haliotis	Intertidal zone
+LEGEND_SHAPE_SCALES	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+
+
+
+#width of the colored strip
+#STRIP_WIDTH 20
+
+#left margin, used to increase/decrease the spacing to the next dataset. Can be negative, causing datasets to overlap.
+#MARGIN 20
+
+#border width; if set above 0, a border of specified width (in pixels) will be drawn around the color strip 
+#BORDER_WIDTH 0
+
+#border color; used when BORDER_WIDTH is above 0
+#BORDER_COLOR #0000ff
+
+#always show internal values; if set, values associated to internal nodes will be displayed even if these nodes are not collapsed. It could cause overlapping in the dataset display.
+#SHOW_INTERNAL 0
+
+
+#Internal tree nodes can be specified using IDs directly, or using the 'last common ancestor' method described in iTOL help pages
+
+#=================================================================#
+#       Actual data follows after the "DATA" keyword              #
+#=================================================================#
+DATA
+
+GNM013034545	#994d00	Brown algae
+GNM013110755	#3CB44B	Coral
+GNM017872615	#ff3300	Mangrove
+GNM013110715	#3CB44B	Coral
+GNM013110775	#3CB44B	Coral
+GNM017872495	#ff3300	Mangrove
+GNM013034605	#994d00	Brown algae
+GNM013110805	#3CB44B	Coral
+GNM013111185	#3CB44B	Coral
+GNM013110825	#3CB44B	Coral
+GNM013034475	#994d00	Brown algae
+GNM013034055	#994d00	Brown algae
+GNM013034065	#994d00	Brown algae
+GNM013033145	#994d00	Brown algae
+GNM013031055	#3CB44B	Coral
+GNM013032085	#3CB44B	Coral
+GNM013031465	#3CB44B	Coral
+GNM013032775	#3CB44B	Coral
+GNM013030965	#3CB44B	Coral
+GNM013035915	#994d00	Brown algae
+GNM019904295	#3CB44B	Coral
+GNM013031735	#3CB44B	Coral
+GNM013031825	#3CB44B	Coral
+GNM013032745	#3CB44B	Coral
+GNM013031645	#3CB44B	Coral
+GNM013031835	#3CB44B	Coral
+GNM013036025	#994d00	Brown algae
+GNM013031795	#3CB44B	Coral
+GNM013035685	#994d00	Brown algae
+GNM013035525	#994d00	Brown algae
+GNM013031785	#3CB44B	Coral
+GNM013031435	#3CB44B	Coral
+GNM013035965	#994d00	Brown algae
+GNM013035955	#994d00	Brown algae
+GNM013035365	#994d00	Brown algae
+GNM013031885	#3CB44B	Coral
+GNM013033105	#994d00	Brown algae
+GNM013033065	#994d00	Brown algae
+GNM013031105	#3CB44B	Coral
+GNM013031145	#3CB44B	Coral
+GNM013035845	#994d00	Brown algae
+GNM013033075	#994d00	Brown algae
+GNM013032905	#3CB44B	Coral
+GNM013031525	#3CB44B	Coral
+GNM013031545	#3CB44B	Coral
+GNM013035745	#994d00	Brown algae
+GNM013035705	#994d00	Brown algae
+GNM013031595	#3CB44B	Coral
+GNM013032965	#994d00	Brown algae
+GNM013031485	#3CB44B	Coral
+GNM013035605	#994d00	Brown algae
+GNM013031625	#3CB44B	Coral
+GNM013035715	#994d00	Brown algae
+GNM013031585	#3CB44B	Coral
+GNM013035855	#994d00	Brown algae
+GNM013031375	#3CB44B	Coral
+GNM013034125	#994d00	Brown algae
+GNM013032535	#3CB44B	Coral
+GNM013034185	#994d00	Brown algae
+GNM013034395	#994d00	Brown algae
+GNM013032205	#3CB44B	Coral
+GNM013034045	#994d00	Brown algae
+GNM013034105	#994d00	Brown algae
+GNM013032305	#3CB44B	Coral
+GNM013033805	#994d00	Brown algae
+GNM013033815	#994d00	Brown algae
+GNM013033605	#994d00	Brown algae
+GNM013035565	#994d00	Brown algae
+GNM013035615	#994d00	Brown algae
+GNM013035275	#994d00	Brown algae
+GNM013032575	#3CB44B	Coral
+GNM013034425	#994d00	Brown algae
+GNM013033185	#994d00	Brown algae
+GNM013032145	#3CB44B	Coral
+GNM013034145	#994d00	Brown algae
+GNM013032005	#3CB44B	Coral
+GNM013032035	#3CB44B	Coral
+GNM020524825	#D2F53C	Offshore
+GNM013032265	#3CB44B	Coral
+GNM013033245	#994d00	Brown algae
+GNM013031015	#3CB44B	Coral
+GNM013031985	#3CB44B	Coral
+GNM013034305	#994d00	Brown algae
+GNM013032125	#3CB44B	Coral
+GNM013033155	#994d00	Brown algae
+GNM013034325	#994d00	Brown algae
+GNM013034375	#994d00	Brown algae
+GNM013034355	#994d00	Brown algae
+GNM013032425	#3CB44B	Coral
+GNM013033855	#994d00	Brown algae
+GNM013032735	#3CB44B	Coral
+GNM013032765	#3CB44B	Coral
+GNM013031345	#3CB44B	Coral
+GNM013032845	#994d00	Brown algae
+GNM013035165	#994d00	Brown algae
+GNM013030235	#3CB44B	Coral
+GNM013032925	#994d00	Brown algae
+GNM013035085	#994d00	Brown algae
+GNM013035125	#994d00	Brown algae
+GNM013035055	#994d00	Brown algae
+GNM013032855	#994d00	Brown algae
+GNM013032945	#994d00	Brown algae
+GNM013032875	#994d00	Brown algae
+GNM013033425	#994d00	Brown algae
+GNM013035235	#994d00	Brown algae
+GNM013035225	#994d00	Brown algae
+GNM013035185	#994d00	Brown algae
+GNM013034565	#994d00	Brown algae
+GNM013031165	#3CB44B	Coral
+GNM013031185	#3CB44B	Coral
+GNM013034585	#994d00	Brown algae
+GNM013031225	#3CB44B	Coral
+GNM013034595	#994d00	Brown algae
+GNM013112245	#3CB44B	Coral
+GNM013110885	#3CB44B	Coral
+GNM013110915	#3CB44B	Coral
+GNM013110875	#3CB44B	Coral
+GNM013034445	#994d00	Brown algae
+GNM013110855	#3CB44B	Coral
+GNM013032405	#3CB44B	Coral
+GNM013032345	#3CB44B	Coral
+GNM013032325	#3CB44B	Coral
+GNM013032365	#3CB44B	Coral
+GNM013032525	#3CB44B	Coral
+GNM013032455	#3CB44B	Coral
+GNM013034165	#994d00	Brown algae
+GNM013034955	#994d00	Brown algae
+GNM013032625	#3CB44B	Coral
+GNM013033395	#994d00	Brown algae
+GNM013032675	#3CB44B	Coral
+GNM013033445	#994d00	Brown algae
+GNM013034945	#994d00	Brown algae
+GNM013032665	#3CB44B	Coral
+GNM013034915	#994d00	Brown algae
+GNM013033385	#994d00	Brown algae
+GNM013034725	#994d00	Brown algae
+GNM013033345	#994d00	Brown algae
+GNM013034845	#994d00	Brown algae
+GNM013034905	#994d00	Brown algae
+GNM013031265	#3CB44B	Coral
+GNM013032635	#3CB44B	Coral
+GNM013030185	#3CB44B	Coral
+GNM013035005	#994d00	Brown algae
+GNM013034755	#994d00	Brown algae
+GNM013032725	#3CB44B	Coral
+GNM013033555	#994d00	Brown algae
+GNM013033545	#994d00	Brown algae
+GNM013031745	#3CB44B	Coral
+GNM013033045	#994d00	Brown algae
+GNM013035465	#994d00	Brown algae
+GNM013032375	#3CB44B	Coral
+GNM013034005	#994d00	Brown algae
+GNM013033845	#994d00	Brown algae
+GNM013033775	#994d00	Brown algae
+GNM013032235	#3CB44B	Coral
+GNM017872555	#FFE119	Bare flat
+GNM017872545	#FFE119	Bare flat
+GNM017872535	#FFE119	Bare flat
+GNM003318155	#FFE119	Bare flat
+GNM018678055	#FFE119	Bare flat
+GNM018619345	#FFE119	Bare flat
+GNM900537105	#0082C8	Sponge
+GNM900302455	#FFE119	Bare flat
+GNM900537095	#0082C8	Sponge
+GNM900313015	#3CB44B	Coral
+GNM013110675	#3CB44B	Coral
+GNM013034175	#994d00	Brown algae
+GNM013033235	#994d00	Brown algae
+GNM013110635	#3CB44B	Coral
+GNM013033705	#994d00	Brown algae
+GNM013110645	#3CB44B	Coral
+GNM013110595	#3CB44B	Coral
+GNM013110705	#3CB44B	Coral
+GNM017872595	#FFE119	Bare flat
+GNM017872515	#ff3300	Mangrove
+GNM013110585	#3CB44B	Coral
+GNM013110575	#3CB44B	Coral
+GNM013030165	#3CB44B	Coral
+GNM013031355	#3CB44B	Coral
+GNM013030225	#3CB44B	Coral
+GNM013034685	#994d00	Brown algae
+GNM013034745	#994d00	Brown algae
+GNM013031325	#3CB44B	Coral
+GNM013030305	#3CB44B	Coral
+GNM013030985	#3CB44B	Coral
+GNM013032225	#3CB44B	Coral
+GNM013031125	#3CB44B	Coral
+GNM013032045	#3CB44B	Coral
+GNM013035755	#994d00	Brown algae
+GNM013035905	#994d00	Brown algae
+GNM013031685	#3CB44B	Coral
+GNM013031665	#3CB44B	Coral
+GNM013031725	#3CB44B	Coral
+GNM013035785	#994d00	Brown algae
+GNM013032155	#3CB44B	Coral
+GNM013032275	#3CB44B	Coral
+GNM013033625	#994d00	Brown algae
+GNM013033675	#994d00	Brown algae
+GNM013035655	#994d00	Brown algae
+GNM013035805	#994d00	Brown algae
+GNM013033635	#994d00	Brown algae
+GNM013034675	#994d00	Brown algae
+GNM013034855	#994d00	Brown algae
+GNM013034815	#994d00	Brown algae
+GNM013035265	#994d00	Brown algae
+GNM013035145	#994d00	Brown algae
+GNM021405365	#FFE119	Bare flat
+GNM021405465	#FFE119	Bare flat
+GNM021405405	#FFE119	Bare flat
+GNM021405385	#FFE119	Bare flat
+GNM022321465	#FFFFF0	Intertidal zone
+GNM021405505	#FFE119	Bare flat
+GNM021405525	#FFE119	Bare flat
+GNM021405545	#FFE119	Bare flat
+GNM021405485	#FFE119	Bare flat
+GNM018972145	#46F0F0	pelagic zone 
+GNM000011965	#FFE119	Bare flat
+GNM000161775	#911EB4	Geothermal lake
+GNM900141625	#911EB4	Geothermal lake
+GNM003664205	#F032E6	Ark clam
+GNM000192475	#F032E6	Ark clam
+GNM017743795	#3CB44B	Coral
+GNM017743815	#3CB44B	Coral
+GNM013033005	#994d00	Brown algae
+GNM013033025	#994d00	Brown algae
+GNM013034465	#994d00	Brown algae
+GNM013110795	#3CB44B	Coral
+GNM013034485	#994d00	Brown algae
+GNM013034805	#994d00	Brown algae
+GNM013033735	#994d00	Brown algae
+GNM013033925	#994d00	Brown algae
+GNM013034335	#994d00	Brown algae
+GNM013034255	#994d00	Brown algae
+GNM013034525	#994d00	Brown algae
+GNM013031175	#3CB44B	Coral
+GNM013034975	#994d00	Brown algae
+GNM013034665	#994d00	Brown algae
+GNM013035585	#994d00	Brown algae
+GNM013033505	#994d00	Brown algae
+GNM013033205	#994d00	Brown algae
+GNM013031085	#3CB44B	Coral
+GNM013033355	#994d00	Brown algae
+GNM013034825	#994d00	Brown algae
+GNM013031285	#3CB44B	Coral
+GNM020524465	#D2F53C	Offshore
+GNM020171505	#D2F53C	Offshore
+GNM013031475	#3CB44B	Coral
+GNM013035435	#994d00	Brown algae
+GNM013035325	#994d00	Brown algae
+GNM013031845	#3CB44B	Coral
+GNM013031905	#3CB44B	Coral
+GNM013031945	#3CB44B	Coral
+GNM013031925	#3CB44B	Coral
+GNM013031955	#3CB44B	Coral
+GNM013032185	#3CB44B	Coral
+GNM013032025	#3CB44B	Coral
+GNM013033285	#994d00	Brown algae
+GNM013033315	#994d00	Brown algae
+GNM013032695	#3CB44B	Coral
+GNM013033305	#994d00	Brown algae
+GNM022347725	#3CB44B	Coral
+GNM021405555	#FFE119	Bare flat
+GNM013034225	#994d00	Brown algae
+GNM001507595	#D2F53C	Offshore
+GNM013030325	#3CB44B	Coral
+GNM900143525	#0082C8	Sponge
+GNM010500245	#008080	River Estuary
+GNM903914075	#2F4F4F	Marine aquaria system
+GNM013030195	#3CB44B	Coral
+GNM017743975	#3CB44B	Coral
+GNM020171305	#D2F53C	Offshore
+GNM001507545	#808000	Bathypelagic ocean
+GNM013035485	#994d00	Brown algae
+GNM013030345	#3CB44B	Coral
+GNM013031695	#3CB44B	Coral
+GNM013033575	#994d00	Brown algae
+GNM900129345	#F58231	Thermal springs
+GNM013035475	#994d00	Brown algae
+GNM900101475	#D2F53C	Offshore
+GNM005938215	#FFE119	Bare flat
+GNM900313035	#3CB44B	Coral
+GNM013032825	#3CB44B	Coral
+GNM000743705	#0082C8	Sponge
+GNM013035315	#994d00	Brown algae
+GNM017743935	#3CB44B	Coral
+GNM017743995	#3CB44B	Coral
+GNM013035545	#994d00	Brown algae
+GNM013035045	#994d00	Brown algae
+GNM900185035	#FFE119	Bare flat
+GNM900106805		NA
+GNM900172225	#FFE119	Bare flat
+GNM003443535	#CD5C5C	Red algae
+GNM013035865	#994d00	Brown algae
+GNM013032445	#3CB44B	Coral
+GNM000814005	#808080	Squid
+GNM900172215	#E6BEFF	Sea pineapple
+GNM013031405	#3CB44B	Coral
+GNM001458095	#D2F53C	Offshore
+GNM013033725	#994d00	Brown algae
+GNM013035395	#994d00	Brown algae
+GNM013030285	#3CB44B	Coral
+GNM001458195	#D2F53C	Offshore
+GNM013034645	#994d00	Brown algae
+GNM013031245	#3CB44B	Coral
+GNM900537075	#0082C8	Sponge
+GNM013032485	#3CB44B	Coral
+GNM013034775	#994d00	Brown algae
+GNM013110685	#3CB44B	Coral
+GNM013033515	#994d00	Brown algae
+GNM013031295	#3CB44B	Coral
+GNM001238295	#FFE119	Bare flat
+GNM013033895	#994d00	Brown algae
+GNM013032095	#3CB44B	Coral
+GNM013032605	#3CB44B	Coral
+GNM013035625	#994d00	Brown algae
+GNM003318255	#FFE119	Bare flat
+GNM013035825	#994d00	Brown algae
+GNM009363615	#AAFFC3	Non marine
+GNM000813985	#808080	Squid
+GNM013033765	#994d00	Brown algae
+GNM013032505	#3CB44B	Coral
+GNM013035375	#994d00	Brown algae
+GNM013033955	#994d00	Brown algae
+GNM023502395	#0082C8	Sponge
+GNM013032955	#994d00	Brown algae
+GNM013035065	#994d00	Brown algae
+GNM000158135	#0082C8	Sponge
+GNM013031425	#3CB44B	Coral
+GNM013033885	#994d00	Brown algae
+GNM013033665	#994d00	Brown algae
+GNM001458295	#FFD8B1	Oyster
+GNM900182615	#FFE119	Bare flat
+GNM013032565	#3CB44B	Coral
+GNM013033215	#994d00	Brown algae
+GNM013377785	#000075	Haliotis
+GNM013034275	#994d00	Brown algae
+GNM013033125	#994d00	Brown algae
+GNM013034025	#994d00	Brown algae
+GNM013030265	#3CB44B	Coral
+GNM013031565	#3CB44B	Coral
+GNM013035425	#994d00	Brown algae
+GNM900312795	#0082C8	Sponge
+GNM013033965	#994d00	Brown algae
+GNM013033945	#994d00	Brown algae
+GNM013035175	#994d00	Brown algae
+GNM019801065	#D2F53C	Offshore
+GNM013033465	#994d00	Brown algae
+GNM013035305	#994d00	Brown algae
+GNM013035025	#994d00	Brown algae
+GNM013033475	#994d00	Brown algae
+GNM013034245	#994d00	Brown algae
+GNM013035945	#994d00	Brown algae
+GNM021405425	#FFFFF0	Intertidal zone
